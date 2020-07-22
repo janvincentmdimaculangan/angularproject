@@ -1,0 +1,33 @@
+<div class="login">
+  <h1>Login to Web App</h1>
+  <form method="post" action=""  #userForm="ngForm">
+    <p><input type="text" class="form-control" id="email" [(ngModel)]="user.email" name="email"></p>
+    <p> <input type="password" class="form-control" id="password" [(ngModel)]="user.password" name="password" autocomplete="on"></p>
+    <p class="remember_me">
+      <label>
+        <input type="checkbox" name="remember_me" id="remember_me">
+        Remember me on this computer
+      </label>
+    </p>
+    <p class="submit" (click)="loginUser(user)"><input type="submit" name="commit" value="Login"></p>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

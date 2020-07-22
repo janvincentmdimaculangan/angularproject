@@ -1,0 +1,54 @@
+
+​<!DOCTYPE html>
+<html>
+  
+<head>
+ 
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Maintenance Management ReportRegister</h2>
+<p></p>
+
+
+<table>
+ 
+  <tr>
+    <th>Store Name</th>
+    <th>Issue</th>
+    <th>Status</th>
+     <th>Action</th>
+   
+  </tr>
+
+  
+  <tr *ngFor="let group of groups">
+    <td style="text-align: center"><a routerLink='/details/{{group.id}}'>{{group.storename}}</a></td>
+    <td style="text-align: center"><a routerLink='/details/{{group.id}}'>{{group.issue}}</a></td>
+    <td style="text-align: center"><a routerLink='/details/{{group.id}}'>{{group.status}}</a></td>
+    <td style="text-align: center"><button (click) ="deleteReport(group.id)" class="btn btn-danger" text-align="center">Delete</button></td>
+  
+  </tr>
+  
+</table>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+
+<div class="container">
+    <h2>Update Report</h2>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="inputdefault">Ticket Number</label>
+            <input class="form-control" id="ticketnumber" type="text" required [(ngModel)]="editreport.ticketnumber" [ngModelOptions]="{standalone: true}">
+          </div>
+      <div class="form-group">
+        <label for="inputdefault">Store Name</label>
+        <input class="form-control" id="storename" required [(ngModel)]="editreport.storename" [ngModelOptions]="{standalone: true}"type="text">
+      </div>
+      <div class="form-group">
+        <label for="inputlg">Store Number</label>
+        <input class="form-control input-lg" id="storenumaber" required [(ngModel)]="editreport.storenumaber" [ngModelOptions]="{standalone: true}" type="text">
+      </div>
+       <div class="form-group">
+        <label for="inputsm">Date Reported</label><br>
+        <input type ="date" id="datereported" name="datereported" required [(ngModel)]="editreport.datereported" [ngModelOptions]="{standalone: true}">
+    
+      </div>!-->
+      <div class="form-group">
+        <label for="inputsm">Equipment</label>
+        <input class="form-control input-sm" id="equipment" type="text" required [(ngModel)]="editreport.equipment" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label for="inputsm">Issue</label>
+        <input class="form-control input-sm" id="issue" type="text" required [(ngModel)]="editreport.issue" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label for="inputsm">Date Fixed</label><br>
+        <input type ="date" id="datedfixed" name="datefixed" required [(ngModel)]="editreport.datefixed" [ngModelOptions]="{standalone: true}">
+      </div>
+     <div class="form-group">
+        <label for="inputsm">Recommendation</label>
+        <input class="form-control input-sm" id="recomendation"  required [(ngModel)]="editreport.recomendation"type="text" [ngModelOptions]="{standalone: true}">
+      </div>
+      
+      <div class="form-group">
+        <label for="inputsm">Status</label>
+        <input class="form-control"  id="status" required [(ngModel)]="editreport.status"type="text" [ngModelOptions]="{standalone: true}">
+          
+      </div>
+      <button type="submit" class="btn btn-info">Update</button>
+    </form>
+ </div>
+  
+  

@@ -1,0 +1,26 @@
+
+
+<div class="container"*ngIf="groups">
+  <h2>Report Details</h2>
+  <ul class="list-group" >
+    <li class="list-group-item">Ticket Number : {{groups.ticketnumber}} </li>
+    <li class="list-group-item">Store Number  : {{groups.storenumaber}}</li>
+    <li class="list-group-item">Store Name    : {{groups.storename}}</li>
+    <li class="list-group-item">Date Reported : {{groups.datereported}}</li>
+    <li class="list-group-item">Equipment     : {{groups.equipment}}</li>
+    <li class="list-group-item">Issue         : {{groups.issue}}</li>
+    <li class="list-group-item">Date Fixed    : {{groups.datefixed}}</li>
+    <li class="list-group-item">Recomendation : {{groups.recomendation}}</li>
+    <li class="list-group-item">Status        : {{groups.status}}</li>
+  
+  </ul>
+</div>
+
+<div class="clearfix" style="text-align:center;"><br>
+  <button type="button" class="cancelbtn" (click)="gotoview()">Cancel</button>
+
+  <button type="submit" class="signupbtn"  (click)="gotoupdate(groups.id)">Update</button>-
+  
+</div>
+
+
